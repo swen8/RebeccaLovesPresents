@@ -14,7 +14,7 @@ body {
     background:url(resources/first.jpg)no-repeat;
     background-size:cover;
     background-position: center;
-    height:100vh;
+    height:100vmax;
 }
 .welcome-hero:before{
     position:absolute;
@@ -32,14 +32,21 @@ body {
 
 .header-text {
     margin-top: 10vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.header-text h2 {
+.header-text>.big-text {
     color: #fff;
     font-size: 8vw;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 1.5;
+}
+
+.header-text>.small-text {
+    color: #fff;
 }
 
 .list-items{
@@ -69,6 +76,7 @@ body {
     font-size: 24px;
     color: #333;
     margin-top: 10vh;
+    margin-bottom: 5vh;
   }
   
   #countdown > div {
